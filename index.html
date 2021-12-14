@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator 2.0</title>
+</head>
+
+<body>
+    <div class="bg">
+        <!-- Main container -->
+        <div class="container">
+            <div class="result">
+                <span id="result-equal"></span>
+                <span id="result"></span>
+            </div>
+            <div class="calculation">
+                <input type="text" id="screen" value="0">
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td class="ope-btn">C</td>
+                        <td class="ope-btn">π</td>
+
+                        <!-- Backspace button -->
+                        <td class="backSpace" onclick="backSpace();"><i class="fas fa-backspace"></i></td>
+                        <td class="ope-btn">/</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn">7</td>
+                        <td class="num-btn">8</td>
+                        <td class="num-btn">9</td>
+                        <td class="ope-btn">X</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn">4</td>
+                        <td class="num-btn">5</td>
+                        <td class="num-btn">6</td>
+                        <td class="ope-btn">-</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn">1</td>
+                        <td class="num-btn">2</td>
+                        <td class="num-btn">3</td>
+                        <td class="ope-btn">+</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn">0</td>
+                        <td class="num-btn">00</td>
+                        <td class="num-btn">.</td>
+                        <td class="ope-btn equal">=</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
